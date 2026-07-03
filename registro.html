@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardar Registro</title>
+</head>
+    <body>
+    <form action="guardar_registro.php" method="POST">
+
+        <label for="usuario">usuario:</label><br>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+        <label for="contrasena">Contrasena:</label><br>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+
+        <label for="estatus">estatus:</label><br>          
+        <select id="estatus" name="estatus" required>
+            <option value="activo">Activo</option>
+            <option value="baja">baja</option>
+            <option value="suspencion">Suspencion</option>
+            <option value="inactivo">Inactivo</option>
+            <option value="cancelado">cancelado</option>
+        </select><br><br>
+
+
+        <label for ="tipo_usuario">tipo_usuario:</label><br>
+        <input type="text" id="tipo_usuario" name="tipo_usuario" required><br><br>         
+
+        <button type="submit">Guardar</button>
+
+
+    </form>
+   //la informacion tiene q estar dentro del form para que registre
+</body>
+</html> 
+        
+    
+    
